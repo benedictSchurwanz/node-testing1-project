@@ -8,7 +8,7 @@
  */
 function trimProperties(obj) {
   // ✨ implement
-  return Object.keys(obj)
+  return {[Object.keys(obj)[0]]: Object.values(obj)[0]}
 }
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
