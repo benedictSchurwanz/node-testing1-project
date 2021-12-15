@@ -2,11 +2,12 @@ const utils = require('./index')
 
 describe('[Exercise 1] trimProperties', () => {
   test('Trying to figure out how to successfully iterate through an object.', () => {
-    const testinput = { foo: 'foo' }
-    const testoutput = { foo: 'foo' }
+    const input = { foo: 'foo' }
+    const output = { foo: 'foo' }
     
-    console.log(utils.trimProperties(testinput))
-    expect(testinput).toEqual(testoutput)
+    console.log(utils.trimProperties(input))
+    
+    expect(output).toEqual(utils.trimProperties(input))
   })
   
   // test('[1] returns an object with the properties trimmed', () => {
