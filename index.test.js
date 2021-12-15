@@ -2,14 +2,14 @@ const utils = require('./index')
 
 describe('[Exercise 1] trimProperties', () => {
   test('Trying to figure out how to successfully iterate through an object.', () => {
-    const input = { foo: 'bar', baz: 'boh' }
-    const expected = { foo: 'bar', baz: 'boh' }
+    const input = { foo: 'bar  '/* , baz: 'boh' */ }
+    const expected = { foo: 'bar'/* , baz: 'boh' */ }
     const actual = utils.trimProperties(input)
     
-    console.log("input:  ", input)
-    console.log("output:  ", expected)
-    console.log("trimProperties(input) (actual) inside test:  ", actual)
-        
+    // console.log("input:  ", input)
+    // console.log("output:  ", expected)
+    // console.log("trimProperties(input) (actual) inside test:  ", actual)
+
     expect(actual).toEqual(expected)
   })
   
