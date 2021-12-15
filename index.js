@@ -8,8 +8,11 @@
  */
 function trimProperties(obj) {
   // ✨ implement
-}
+  const key = Object.keys(obj)[0]
+  const val = Object.values(obj)[0]
 
+  return ({[key]: val})  
+}
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
  * @param {object} obj - an object with properties that are strings
