@@ -1,25 +1,22 @@
 const utils = require('./index')
 
 describe('[Exercise 1] trimProperties', () => {
-  test('Trying to figure out how to successfully iterate through an object.', () => {
-    const input = { foo: 'bar  '/* , baz: 'boh' */ }
-    const expected = { foo: 'bar'/* , baz: 'boh' */ }
-    const actual = utils.trimProperties(input)
-    
-    // console.log("input:  ", input)
-    // console.log("output:  ", expected)
-    // console.log("trimProperties(input) (actual) inside test:  ", actual)
-
-    expect(actual).toEqual(expected)
-  })
-  
-  // test('[1] returns an object with the properties trimmed', () => {
-  //   // EXAMPLE
-  //   const input = { foo: '  foo ', bar: 'bar ', baz: ' baz' }
-  //   const expected = { foo: 'foo', bar: 'bar', baz: 'baz' }
+  // the result of my debugging process:
+  // test('Trying to figure out how to successfully iterate through an object.', () => {
+  //   const input = { key1: 'val1  ', key2: '  val2' }
+  //   const expected = { key1: 'val1', key2: 'val2' }
   //   const actual = utils.trimProperties(input)
   //   expect(actual).toEqual(expected)
   // })
+  
+  test('[1] returns an object with the properties trimmed', () => {
+    // EXAMPLE
+    const input = { foo: '  foo ', bar: 'bar ', baz: ' baz' }
+    const expected = { foo: 'foo', bar: 'bar', baz: 'baz' }
+    const actual = utils.trimProperties(input)
+    expect(actual).toEqual(expected)
+  })
+    
   // test('[2] returns a copy, leaving the original object intact', () => {})
 })
 

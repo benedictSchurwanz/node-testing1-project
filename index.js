@@ -6,10 +6,13 @@
 //  trimProperties({ name: '  jane  ' }) // returns a new object { name: 'jane' }
 
 function trimProperties(obj) {
-  // ✨ implement
-  return {[Object.keys(obj)[0]]: Object.values(obj)[0].trim()}
+  const result = {}
+  console.log("obj:", obj)
+  for (const key in obj) {
+    result[key] = obj[key].trim()
+  }
+  return result
 }
-
 
 
 // /**
